@@ -1,33 +1,21 @@
-#include <math.h>
 #include <stdio.h>
-
 /**
- * A function to print all prime factors of a given number n
- */
-void primeFactors(long n)
-{
-
-  int i;
-  
-  while (n % 2 == 0) {
-    n = n / 2;
-  }
-
-  for (i = 3; i <= sqrt(n); i = i + 2) {
-    while (n % i == 0) {
-      n = n / i;
-    }
-  }
-  if (n > 2)
-    printf("%ld\n", n);
-}
-
-/**
- *Driver program to test above function 
+* main - entry block
+* @void: no argument
+* Return: 0
 */
-int main()
+int main(void)
 {
-	long n = 612852475143;
-	primeFactors(n);
-	return 0;
-}                                        
+	long i, number = 612852475143;
+
+	for (i  = 2; i <= number; i++)
+	{
+		if (number % i == 0)
+		{
+			number = number / i;
+			i--;
+		}
+	}
+	printf("%lu\n", i);
+	return (0);
+}
