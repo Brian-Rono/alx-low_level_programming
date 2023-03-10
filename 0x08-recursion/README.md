@@ -47,3 +47,9 @@ A function that returns the value of x raised to the [power](https://www.mathsis
 * Prototype: int _pow_recursion(int x, int y);
 * If y is lower than 0, the function should return -1
 The standard library provides a different function: [pow](https://www.geeksforgeeks.org/power-function-cc/).
+
+#### 5-sqrt_recursion.c
+A function that returns the natural square [root](https://www.mathsisfun.com/square-root.html)of a number.
+* Prototype: int _sqrt_recursion(int n);
+* If n does not have a natural square root, the function should return -1
+The standard library provides a different function: [sqrt](https://www.geeksforgeeks.org/c-program-to-find-square-root-of-a-given-number/).
