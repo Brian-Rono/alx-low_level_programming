@@ -53,3 +53,8 @@ A function that returns the natural square [root](https://www.mathsisfun.com/squ
 * Prototype: int _sqrt_recursion(int n);
 * If n does not have a natural square root, the function should return -1
 The standard library provides a different function: [sqrt](https://www.geeksforgeeks.org/c-program-to-find-square-root-of-a-given-number/).
+
+#### 100-is_palindrome.c
+A function that returns 1 if a string is a palindrome and 0 if not.
+* Prototype: int is_palindrome(char *s);
+* An empty string is a palindrome
